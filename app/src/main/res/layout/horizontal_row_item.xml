@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/horizontal_row_item">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/linear_layout_vue_horizontale">
+
+        <TextView
+            android:id="@+id/horizontal_rv_textview_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5% rabais"
+            android:textSize="12dp"
+            android:textColor="@color/red"/>
+
+        <ImageView
+            android:id="@+id/horizontal_rv_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/iphone13"
+            app:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/horizontal_rv_textview_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iphone 13"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_toRightOf="@+id/linear_layout_vue_horizontale"
+        android:id="@+id/divider2"
+        android:layout_width="1dp"
+        android:layout_height="92dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
